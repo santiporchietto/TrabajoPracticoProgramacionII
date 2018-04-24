@@ -10,6 +10,7 @@ namespace Tpjuego
 
     public class Carta
     {
+        //Prueba commit Said
         public int CodigoCarta { get; set; }
         public TipoDeCarta Tipo { get; set; }
         public List<Atributo> Atributos { get; set; }
