@@ -10,7 +10,7 @@ namespace Tpjuego
     {
         public string IdConnection { get; set; }
         public string Nombre { get; set; }
-        private List<Carta> CartasAsignadas { get; set; }
+        public List<Carta> CartasAsignadas { get; set; }
 
         public Jugador(string id, string nombre)
         {

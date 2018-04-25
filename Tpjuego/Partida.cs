@@ -40,6 +40,13 @@ namespace Tpjuego
             return partida;
         }
 
+        public void AgregarJugador(Jugador jugador)
+        {
+            if (this.Jugador2 == null)
+            {
+                this.Jugador2 = jugador;
+            }
+        }
 
         public void MezclarMazo()
         {
@@ -55,7 +62,7 @@ namespace Tpjuego
 
         public void RepartirCartas()
         {
-            if (MazoPartida.Cartas != null && MazoPartida.Cartas.Count() != 0 && Jugador1 != null && Jugador2 != null)
+            if (MazoPartida!=null &&MazoPartida.Cartas != null && MazoPartida.Cartas.Count() != 0 && Jugador1 != null && Jugador2 != null)
             {
                 this.MezclarMazo();
                 int cantidadcartas = MazoPartida.Cartas.Count();
